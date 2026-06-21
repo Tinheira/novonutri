@@ -1,0 +1,2209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Janaina Villarroel — nutricionista clínica e esportiva em Atibaia-SP. Plano alimentar 100% personalizado para emagrecimento saudável, nutrição esportiva e saúde da mulher. Consultas presenciais e online para todo o Brasil.">
+    <meta name="keywords" content="nutricionista Atibaia, nutricionista online, nutrição clínica, nutrição esportiva, emagrecimento saudável, saúde da mulher, plano alimentar personalizado, reeducação alimentar, suplementação nutricional, consulta nutricional, nutricionista SP, perda de peso, ganho de massa muscular, nutricionista gestante, IMC">
+    <meta name="author" content="Janaina Villarroel">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Atibaia, São Paulo">
+    <meta property="og:title" content="Janaina Villarroel | Nutricionista Clínica e Esportiva em Atibaia-SP">
+    <meta property="og:description" content="Plano alimentar 100% personalizado para emagrecimento, nutrição esportiva e saúde da mulher. Consultas presenciais em Atibaia-SP e online para todo o Brasil.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Janaina Villarroel | Nutricionista Clínica e Esportiva">
+    <meta name="twitter:description" content="Plano alimentar personalizado para emagrecimento, nutrição esportiva e saúde da mulher. Atendimento em Atibaia-SP e online para todo o Brasil.">
+    <title>Janaina Villarroel | Nutricionista Clínica e Esportiva em Atibaia-SP</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* ===== RESET & TOKENS ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --g-dark:   #4A148C;
+            --g-main:   #7B1FA2;
+            --g-mid:    #AB47BC;
+            --g-light:  #CE93D8;
+            --g-pale:   #F3E5F5;
+            --g-bg:     #FDF8FF;
+            --gold:     #f9a825;
+            --gold-lt:  #ffd54f;
+            --rose:     #E91E63;
+            --rose-lt:  #F48FB1;
+            --white:    #ffffff;
+            --off:      #fdf9ff;
+            --t-dark:   #1a1a1a;
+            --t-mid:    #444;
+            --t-light:  #777;
+            --shadow:   0 10px 40px rgba(0,0,0,.12);
+            --shadow-h: 0 20px 60px rgba(0,0,0,.18);
+            --r:        16px;
+            --r-sm:     8px;
+            --ease:     cubic-bezier(.4,0,.2,1);
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--t-dark);
+            background: #EDE0FA;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; display: block; }
+        a   { text-decoration: none; color: inherit; }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.15; }
+
+        /* ===== UTIL CLASSES ===== */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        .tag {
+            display: inline-block;
+            background: var(--g-pale);
+            color: var(--g-dark);
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            color: var(--g-dark);
+            margin-bottom: 14px;
+        }
+
+        .section-sub {
+            font-size: 1.05rem;
+            color: var(--t-light);
+            line-height: 1.75;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: .95rem;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all .35s var(--ease);
+        }
+
+        .btn-green { background: var(--g-main); color: var(--white); }
+        .btn-green:hover { background: var(--g-dark); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(123,31,162,.4); }
+
+        .btn-ghost-g { background: rgba(255,255,255,.6); color: var(--g-main); border: 2px solid var(--g-pale); }
+        .btn-ghost-g:hover { background: var(--g-bg); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(123,31,162,.4); }
+
+        /* ===== SCROLL ANIMATE ===== */
+        .anim { opacity: 0; transform: translateY(40px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+        .anim.on { opacity: 1; transform: none; }
+        .d1 { transition-delay: .1s; }
+        .d2 { transition-delay: .2s; }
+        .d3 { transition-delay: .3s; }
+        .d4 { transition-delay: .4s; }
+        .d5 { transition-delay: .5s; }
+
+        /* ===== SECTION PADDING ===== */
+        section { padding: 100px 0; }
+
+        /* ╔══════════════════════════════╗
+           ║         NAVIGATION          ║
+           ╚══════════════════════════════╝ */
+        #nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 10px 0;
+            transition: all .35s var(--ease);
+        }
+
+        #nav.scrolled {
+            background: rgba(255,255,255,.97);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            padding: 6px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,.1);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .nav-logo-img {
+            height: 130px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+            transition: transform .3s;
+        }
+
+        .nav-logo-img:hover { transform: scale(1.03); }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: .85rem;
+            font-weight: 500;
+            color: rgba(255,255,255,.9);
+            transition: all .3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; left: 0;
+            width: 0; height: 2px;
+            background: var(--gold);
+            transition: width .3s;
+        }
+
+        .nav-links a:hover::after { width: 100%; }
+
+        #nav.scrolled .nav-links a { color: var(--t-dark); }
+
+        .nav-cta {
+            background: var(--gold) !important;
+            color: var(--g-dark) !important;
+            font-weight: 700 !important;
+            padding: 9px 20px;
+            border-radius: 50px;
+        }
+
+        .nav-cta:hover { background: var(--gold-lt) !important; }
+        .nav-cta::after { display: none !important; }
+
+        #nav.scrolled .nav-cta { color: var(--g-dark) !important; }
+
+        .nav-burger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            background: none;
+            border: none;
+        }
+
+        .nav-burger span {
+            display: block;
+            width: 26px; height: 2px;
+            background: white;
+            border-radius: 2px;
+            transition: all .3s var(--ease);
+        }
+
+        #nav.scrolled .nav-burger span { background: var(--g-dark); }
+
+        /* ╔══════════════════════════════╗
+           ║            HERO             ║
+           ╚══════════════════════════════╝ */
+        #hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #2D0057 0%, #4A148C 35%, #7B1FA2 65%, #9C27B0 85%, #6A1B9A 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-glow {
+            position: absolute; inset: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(171,71,188,.35) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(249,168,37,.18) 0%, transparent 40%),
+                radial-gradient(circle at 60% 80%, rgba(233,30,99,.2) 0%, transparent 50%);
+        }
+
+        .hero-photo-overlay {
+            position: absolute; inset: 0;
+            background: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1600&q=80') center/cover no-repeat;
+            opacity: .1;
+        }
+
+        @keyframes float {
+            0%,100% { transform: translateY(0) rotate(0deg); }
+            50%      { transform: translateY(-20px) rotate(4deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            align-items: center;
+            gap: 40px 80px;
+        }
+
+        .hero-left { display: flex; flex-direction: column; }
+
+        .hero-photo-wrap {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 1s var(--ease) .5s both;
+        }
+
+        .hero-photo-ring {
+            position: absolute;
+            width: 105%;
+            height: 105%;
+            border-radius: 40% 60% 55% 45% / 45% 40% 60% 55%;
+            border: 2px solid rgba(249,168,37,.35);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-photo-ring::after {
+            content: '';
+            position: absolute;
+            inset: 12px;
+            border-radius: inherit;
+            border: 1px solid rgba(255,255,255,.12);
+        }
+
+        .hero-jana-img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 40% 60% 55% 45% / 45% 40% 60% 55%;
+            object-fit: cover;
+            object-position: center top;
+            aspect-ratio: 4/5;
+            box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 3px rgba(249,168,37,.3);
+            display: block;
+        }
+
+        .hero-title {
+            font-size: clamp(2.6rem, 6vw, 4.8rem);
+            color: white;
+            line-height: 1.05;
+            animation: slideUp .8s var(--ease) .15s both;
+        }
+
+        .hero-title em {
+            color: var(--gold);
+            display: block;
+            font-style: normal;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            color: rgba(255,255,255,.85);
+            font-weight: 300;
+            margin: 14px 0;
+            animation: slideUp .8s var(--ease) .28s both;
+        }
+
+        .hero-desc {
+            font-size: 1rem;
+            color: rgba(255,255,255,.7);
+            max-width: 480px;
+            line-height: 1.75;
+            margin-bottom: 36px;
+            animation: slideUp .8s var(--ease) .42s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            flex-wrap: wrap;
+            grid-column: 1 / -1;
+            margin-top: 0;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,.14);
+            animation: slideUp .8s var(--ease) .7s both;
+        }
+
+        .stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .stat-lbl {
+            font-size: .75rem;
+            color: rgba(255,255,255,.65);
+            margin-top: 4px;
+            letter-spacing: .3px;
+        }
+
+        @keyframes slideUp   { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:none; } }
+        @keyframes slideDown { from { opacity:0; transform:translateY(-20px); } to { opacity:1; transform:none; } }
+        @keyframes fadeIn    { from { opacity:0; } to { opacity:1; } }
+
+        /* ╔══════════════════════════════╗
+           ║           ABOUT             ║
+           ╚══════════════════════════════╝ */
+        #about { background: transparent; }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .about-text h2 { font-size: clamp(1.8rem,3.5vw,2.5rem); color: var(--g-dark); margin-bottom: 18px; }
+        .about-text h2 em { color: var(--gold); font-style: normal; }
+        .about-text p { color: var(--t-mid); line-height: 1.8; margin-bottom: 14px; }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: .88rem;
+            color: var(--t-mid);
+            font-weight: 500;
+        }
+
+        .check-item i { color: var(--g-mid); }
+
+        .check-cta-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; margin-top: 26px; }
+        .check-col { display: flex; flex-direction: column; gap: 10px; }
+        .col-btn { display: flex; justify-content: flex-start; margin-top: 20px; }
+
+        /* ╔══════════════════════════════╗
+           ║        SPECIALTIES          ║
+           ╚══════════════════════════════╝ */
+        #specialties { background: transparent; }
+
+        .center-head { text-align: center; margin-bottom: 56px; }
+        .center-head .section-sub { max-width: 560px; margin: 0 auto; }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            gap: 20px;
+        }
+
+        .spec-card {
+            background: transparent;
+            border-radius: var(--r);
+            padding: 28px 20px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all .35s var(--ease);
+            cursor: default;
+        }
+
+        .spec-card:hover {
+            background: rgba(255,255,255,.35);
+            border-color: rgba(255,255,255,.6);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(123,31,162,.12);
+        }
+
+        .spec-icon {
+            width: 76px;
+            height: 76px;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 1.75rem;
+            color: white;
+            box-shadow: 0 8px 24px rgba(0,0,0,.18);
+            transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+        }
+
+        .spec-card:hover .spec-icon {
+            transform: scale(1.1) translateY(-4px);
+            box-shadow: 0 16px 36px rgba(0,0,0,.22);
+        }
+
+        .si-purple { background: linear-gradient(135deg, #9C27B0, #4A148C); }
+        .si-gold   { background: linear-gradient(135deg, #f9a825, #e65100); }
+        .si-rose   { background: linear-gradient(135deg, #E91E63, #880E4F); }
+        .si-teal   { background: linear-gradient(135deg, #00ACC1, #00695C); }
+        .si-green  { background: linear-gradient(135deg, #66BB6A, #2E7D32); }
+
+        .spec-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: .92rem;
+            font-weight: 600;
+            color: var(--g-dark);
+        }
+
+        /* ╔══════════════════════════════╗
+           ║          SERVICES           ║
+           ╚══════════════════════════════╝ */
+        #services {
+            background: linear-gradient(135deg, var(--g-dark) 0%, var(--g-main) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #services::before, #services::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,.03);
+        }
+
+        #services::before { width:500px; height:500px; top:-100px; right:-100px; }
+        #services::after  { width:600px; height:600px; bottom:-150px; left:-100px; }
+
+        .services-head { text-align: center; margin-bottom: 56px; }
+        .services-head .tag        { background: rgba(249,168,37,.18); color: var(--gold-lt); }
+        .services-head .section-title { color: white; }
+        .services-head .section-sub   { color: rgba(255,255,255,.7); max-width: 540px; margin: 0 auto; }
+
+        .svc-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 26px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .svc-card {
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.12);
+            backdrop-filter: blur(10px);
+            border-radius: var(--r);
+            padding: 36px 28px;
+            transition: all .35s var(--ease);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .svc-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transition: transform .4s var(--ease);
+        }
+
+        .svc-card:hover { background: rgba(255,255,255,.13); transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+        .svc-card:hover::before { transform: scaleX(1); }
+
+        .svc-card.featured {
+            border-color: rgba(249,168,37,.4);
+        }
+
+        .svc-icon {
+            width: 60px; height: 60px;
+            background: rgba(249,168,37,.18);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            margin-bottom: 22px;
+            color: white;
+        }
+
+        .svc-card h3 { color: white; font-size: 1.3rem; margin-bottom: 10px; }
+        .svc-card > p { font-size: .9rem; color: rgba(255,255,255,.7); line-height: 1.7; margin-bottom: 22px; }
+
+        .svc-list { list-style: none; margin-bottom: 26px; }
+
+        .svc-list li {
+            font-size: .83rem;
+            color: rgba(255,255,255,.8);
+            padding: 7px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+        }
+
+        .svc-list li:last-child { border-bottom: none; }
+        .svc-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+
+        .svc-link {
+            color: var(--gold);
+            font-size: .85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap .3s;
+        }
+
+        .svc-link:hover { gap: 14px; }
+
+        /* ╔══════════════════════════════╗
+           ║           PROCESS           ║
+           ╚══════════════════════════════╝ */
+        #process { background: transparent; }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 28px;
+            position: relative;
+        }
+
+        .steps::before {
+            content: '';
+            position: absolute;
+            top: 35px; left: 10%; right: 10%;
+            height: 2px;
+            background: linear-gradient(to right, var(--g-pale), var(--g-mid), var(--g-pale));
+            z-index: 0;
+        }
+
+        .step { text-align: center; position: relative; z-index: 1; }
+
+        .step-num {
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            border: 3px solid var(--g-pale);
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--g-main);
+            transition: all .35s var(--ease);
+            box-shadow: 0 4px 20px rgba(123,31,162,.15);
+        }
+
+        .step:hover .step-num {
+            background: var(--g-main);
+            color: white;
+            border-color: var(--g-main);
+            transform: scale(1.1);
+        }
+
+        .step h3 { font-family:'Poppins',sans-serif; font-size:.95rem; font-weight:600; color:var(--g-dark); margin-bottom:8px; }
+        .step p  { font-size:.85rem; color:var(--t-light); line-height:1.65; }
+
+        /* ╔══════════════════════════════╗
+           ║      SCROLLING GALLERY      ║
+           ╚══════════════════════════════╝ */
+        #gallery { padding: 56px 0; overflow: hidden; background: transparent; }
+
+        .track {
+            display: flex;
+            gap: 18px;
+            animation: slide 60s linear infinite;
+            width: max-content;
+        }
+
+        .track:hover { animation-play-state: paused; }
+
+        @keyframes slide { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+
+        .gal-item {
+            width: 215px; height: 175px;
+            border-radius: var(--r);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .gal-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform .5s var(--ease);
+        }
+
+        .gal-item:hover img { transform: scale(1.1); }
+
+        /* ╔══════════════════════════════╗
+           ║          REVIEWS            ║
+           ╚══════════════════════════════╝ */
+        #reviews { background: transparent; }
+
+        .reviews-head { text-align: center; margin-bottom: 56px; }
+
+        .g-stars {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            margin-bottom: 6px;
+        }
+
+        .g-stars i { color: #fbbc04; font-size: 1.1rem; }
+
+        .reviews-meta { font-size: .88rem; color: var(--t-light); margin-bottom: 14px; }
+
+        .rv-track-wrap {
+            overflow: hidden;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+        }
+
+        .rv-track {
+            display: flex;
+            gap: 22px;
+            width: max-content;
+            animation: rvSlide 28s linear infinite;
+        }
+
+        .rv-track:hover { animation-play-state: paused; }
+
+        @keyframes rvSlide {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+
+        .rv-card {
+            background: white;
+            border-radius: var(--r);
+            padding: 26px;
+            box-shadow: 0 4px 20px rgba(0,0,0,.06);
+            transition: all .35s var(--ease);
+            width: 340px;
+            flex-shrink: 0;
+        }
+
+        .rv-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+
+        .rv-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+
+        .rv-avatar-green  { background: #c8e6c9 !important; }
+        .rv-avatar-yellow { background: #fff9c4 !important; color: #f57f17 !important; }
+        .cinfo { font-style: normal; }
+
+        .rv-avatar {
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: var(--g-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--g-dark);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .rv-meta strong { display:block; font-size:.93rem; color:var(--t-dark); }
+        .rv-meta span   { font-size:.76rem; color:var(--t-light); }
+
+        .rv-stars { display:flex; gap:2px; margin-bottom:10px; }
+        .rv-stars i { color:#fbbc04; font-size:.82rem; }
+
+        .rv-text { font-size:.88rem; color:var(--t-mid); line-height:1.72; font-style:italic; }
+
+        .rv-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid #f0f0f0;
+            font-size: .72rem;
+            color: var(--t-light);
+        }
+
+        /* ╔══════════════════════════════╗
+           ║          CONTACT            ║
+           ╚══════════════════════════════╝ */
+        #contact { background: transparent; }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-left h2 { font-size: clamp(1.8rem,3vw,2.3rem); color: var(--g-dark); margin-bottom: 14px; }
+        .contact-left > p { color: var(--t-mid); line-height: 1.78; margin-bottom: 32px; }
+
+        .cinfo { display: flex; flex-direction: column; gap: 18px; }
+
+        .citem { display:flex; gap:14px; align-items:flex-start; }
+
+        .citem-icon {
+            width: 46px; height: 46px;
+            border-radius: 12px;
+            background: var(--g-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--g-dark);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .citem-text strong { display:block; font-size:.8rem; font-weight:600; color:var(--t-light); text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
+        .citem-text a, .citem-text p { color:var(--t-dark); font-size:.93rem; font-weight:500; transition:color .3s; }
+        .citem-text a:hover { color:var(--g-main); }
+
+        .csocial { display:flex; gap:10px; margin-top:28px; }
+
+        .csocia-btn {
+            width: 42px; height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all .35s var(--ease);
+            color: white;
+        }
+
+        .csocia-btn.wa { background: #25d366; }
+        .csocia-btn.ig { background: linear-gradient(45deg,#f09433,#dc2743,#bc1888); }
+        .csocia-btn:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+
+        /* form */
+        .form-box {
+            background: white;
+            border-radius: 22px;
+            padding: 38px;
+            box-shadow: 0 8px 40px rgba(0,0,0,.08);
+        }
+
+        .form-box h3 { font-size:1.35rem; color:var(--g-dark); margin-bottom:26px; }
+
+        .fg { margin-bottom: 18px; }
+
+        .fg label { display:block; font-size:.82rem; font-weight:600; color:var(--t-mid); margin-bottom:7px; }
+
+        .fg input, .fg select, .fg textarea {
+            width: 100%;
+            padding: 13px 17px;
+            border: 2px solid #e8e8e8;
+            border-radius: 11px;
+            font-family: 'Poppins',sans-serif;
+            font-size: .9rem;
+            color: var(--t-dark);
+            background: #fafafa;
+            transition: border-color .3s, box-shadow .3s;
+            outline: none;
+        }
+
+        .fg input:focus, .fg select:focus, .fg textarea:focus {
+            border-color: var(--g-mid);
+            box-shadow: 0 0 0 4px rgba(171,71,188,.12);
+            background: white;
+        }
+
+        .fg textarea { resize: vertical; min-height: 115px; }
+
+        .fg-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+
+        .form-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--g-main);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 700;
+            font-size: .97rem;
+            cursor: pointer;
+            transition: all .35s var(--ease);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .form-btn:hover { background: var(--g-dark); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(123,31,162,.4); }
+
+        .form-ok {
+            display: none;
+            text-align: center;
+            padding: 22px;
+            background: var(--g-bg);
+            border-radius: 11px;
+            color: var(--g-dark);
+            font-weight: 600;
+        }
+
+        /* ╔══════════════════════════════╗
+           ║           FOOTER            ║
+           ╚══════════════════════════════╝ */
+        footer {
+            background: var(--g-dark);
+            color: rgba(255,255,255,.65);
+            padding: 64px 24px 28px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 56px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            margin-bottom: 28px;
+        }
+
+        .ft-brand h3 { font-family:'Playfair Display',serif; font-size:1.45rem; color:white; margin-bottom:14px; }
+        .ft-logo { height: 100px; width: auto; display: block; margin-bottom: 14px; }
+        .ft-brand p { font-size:.88rem; line-height:1.72; max-width:280px; }
+
+        .ft-col h4 { font-family:'Poppins',sans-serif; font-size:.8rem; font-weight:700; color:white; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:18px; }
+
+        .ft-links { list-style:none; display:flex; flex-direction:column; gap:9px; }
+        .ft-links a { font-size:.88rem; color:rgba(255,255,255,.6); transition:color .3s; }
+        .ft-links a:hover { color:var(--gold-lt); }
+        .footer-address { color:rgba(255,255,255,.45); font-size:.83rem; margin-top:6px; }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .78rem;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer-bottom a { color: var(--gold-lt); }
+
+        /* ╔══════════════════════════════╗
+           ║           TOOLS             ║
+           ╚══════════════════════════════╝ */
+        #tools { background: transparent; padding: 90px 0; }
+
+        #tools .tools-header { text-align: center; margin-bottom: 64px; }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .tool-card {
+            background: transparent;
+            border-radius: var(--r);
+            padding: 36px;
+            border: 1px solid var(--g-pale);
+        }
+
+        .tool-card-head { margin-bottom: 28px; }
+
+        .tool-card-head i {
+            font-size: 1.8rem;
+            color: var(--g-main);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .tool-card-head h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.45rem;
+            color: var(--g-dark);
+            margin-bottom: 8px;
+        }
+
+        .tool-card-head p {
+            font-size: .9rem;
+            color: var(--t-light);
+            line-height: 1.6;
+        }
+
+        .tool-fields-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .tool-field label {
+            display: block;
+            font-size: .78rem;
+            font-weight: 600;
+            color: var(--g-dark);
+            margin-bottom: 6px;
+            letter-spacing: .3px;
+        }
+
+        .tool-field input {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1.5px solid var(--g-pale);
+            border-radius: var(--r-sm);
+            font-family: 'Poppins', sans-serif;
+            font-size: .9rem;
+            color: var(--t-dark);
+            background: transparent;
+            outline: none;
+            transition: border-color .25s;
+        }
+
+        .tool-field input:focus { border-color: var(--g-mid); }
+
+        .tool-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--g-main);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 26px;
+            font-family: 'Poppins', sans-serif;
+            font-size: .9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background .3s, transform .25s;
+            text-decoration: none;
+        }
+
+        .tool-btn:hover { background: var(--g-dark); transform: translateY(-2px); }
+
+        /* IMC result */
+        .imc-result { margin-top: 24px; }
+
+        .imc-bar-wrap { margin-bottom: 20px; }
+
+        .imc-bar {
+            height: 14px;
+            border-radius: 50px;
+            overflow: visible;
+            position: relative;
+            display: flex;
+        }
+
+        .imc-bar-zones { display: flex; width: 100%; border-radius: 50px; overflow: hidden; }
+        .imc-bar-zones span { height: 14px; }
+
+        .imc-marker {
+            position: absolute;
+            top: -5px;
+            width: 24px; height: 24px;
+            background: var(--g-dark);
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,.25);
+            transform: translateX(-50%);
+            transition: left .6s var(--ease);
+        }
+
+        .imc-bar-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: .7rem;
+            color: var(--t-light);
+            margin-top: 6px;
+            padding: 0 2px;
+        }
+
+        .imc-value-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: var(--g-pale);
+            border-radius: var(--r-sm);
+            padding: 16px 20px;
+        }
+
+        .imc-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--g-dark);
+            white-space: nowrap;
+        }
+
+        .imc-cat {
+            font-weight: 700;
+            font-size: .95rem;
+            color: var(--g-main);
+            margin-bottom: 4px;
+        }
+
+        .imc-msg { font-size: .82rem; color: var(--t-mid); line-height: 1.5; }
+
+        .tool-btn-wa { margin-top: 18px; }
+
+        .imc-zone { height: 14px; }
+        .imc-z-low    { background:#64B5F6; flex:1.85; }
+        .imc-z-normal { background:#81C784; flex:6.5; }
+        .imc-z-over   { background:#FFD54F; flex:5; }
+        .imc-z-ob1    { background:#FF8A65; flex:5; }
+        .imc-z-ob2    { background:#E57373; flex:10; }
+
+        /* Quiz */
+        .quiz-progress { margin-bottom: 20px; }
+
+        .quiz-bar {
+            height: 6px;
+            background: var(--g-pale);
+            border-radius: 50px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        .quiz-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--g-main), var(--g-mid));
+            border-radius: 50px;
+            transition: width .4s var(--ease);
+        }
+
+        .quiz-step-label {
+            font-size: .75rem;
+            color: var(--t-light);
+            font-weight: 500;
+        }
+
+        .quiz-q {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--t-dark);
+            margin-bottom: 18px;
+            line-height: 1.45;
+        }
+
+        .quiz-opts { display: flex; flex-direction: column; gap: 10px; }
+
+        .quiz-opt {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 13px 18px;
+            border: 1.5px solid var(--g-pale);
+            border-radius: var(--r-sm);
+            cursor: pointer;
+            font-size: .9rem;
+            color: var(--t-dark);
+            background: transparent;
+            transition: border-color .25s, background .25s, color .25s;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+
+        .quiz-opt:hover { border-color: var(--g-mid); background: var(--g-pale); }
+
+        .quiz-opt .opt-icon {
+            width: 20px; height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--g-light);
+            flex-shrink: 0;
+            transition: border-color .2s, background .2s;
+        }
+
+        .quiz-opt:hover .opt-icon { border-color: var(--g-main); background: var(--g-pale); }
+
+        /* Quiz result */
+        .quiz-result { text-align: center; padding: 12px 0; }
+
+        .quiz-result-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .quiz-result h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--g-dark);
+            margin-bottom: 12px;
+        }
+
+        .quiz-result p {
+            font-size: .9rem;
+            color: var(--t-mid);
+            line-height: 1.65;
+            margin-bottom: 4px;
+        }
+
+        .quiz-result .tool-btn { margin-top: 20px; }
+
+        .quiz-reset {
+            display: block;
+            margin: 12px auto 0;
+            background: none;
+            border: none;
+            color: var(--t-light);
+            font-family: 'Poppins', sans-serif;
+            font-size: .8rem;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 0;
+        }
+
+        .quiz-reset:hover { color: var(--g-main); }
+
+        @media (max-width: 980px) {
+            .tools-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ╔══════════════════════════════╗
+           ║       WHATSAPP FLOAT        ║
+           ╚══════════════════════════════╝ */
+        .wa-float {
+            position: fixed;
+            bottom: 28px; right: 28px;
+            z-index: 999;
+            animation: waPulse 2.5s ease-in-out infinite;
+        }
+
+        .wa-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 58px; height: 58px;
+            background: #25d366;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.75rem;
+            box-shadow: 0 8px 25px rgba(37,211,102,.45);
+            transition: transform .3s, box-shadow .3s;
+        }
+
+        .wa-float a:hover { transform: scale(1.12); box-shadow: 0 12px 35px rgba(37,211,102,.55); }
+
+        @keyframes waPulse {
+            0%,100% { transform: scale(1); }
+            50%      { transform: scale(1.06); }
+        }
+
+        /* ╔══════════════════════════════╗
+           ║       RESPONSIVE            ║
+           ╚══════════════════════════════╝ */
+        @media (max-width: 980px) {
+            .hero-content  { grid-template-columns: 1fr; gap: 40px; padding: 100px 24px 60px; }
+            .hero-stats    { grid-column: 1; }
+            .hero-photo-wrap { order: -1; }
+            .hero-jana-img { max-width: 320px; margin: 0 auto; }
+            .about-grid    { grid-template-columns: 1fr; gap: 44px; }
+            .svc-grid      { grid-template-columns: 1fr; }
+            .steps         { grid-template-columns: 1fr 1fr; }
+            .steps::before { display: none; }
+            .contact-grid  { grid-template-columns: 1fr; }
+            .footer-grid   { grid-template-columns: 1fr; gap: 32px; }
+        }
+
+        /* ── Menu colapsa em telas até 800px ── */
+        @media (max-width: 800px) {
+            .nav-logo-img  { height: 80px; }
+
+            .nav-links {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: var(--g-dark);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                z-index: 999;
+            }
+
+            .nav-links.open { display: flex; }
+            .nav-links a    { font-size: 1.25rem !important; color: white !important; }
+            .nav-burger     { display: flex; z-index: 1000; }
+        }
+
+        @media (max-width: 640px) {
+            section          { padding: 70px 20px; }
+            .hero-jana-img   { max-width: 260px; }
+            .hero-content    { padding: 80px 20px 50px; }
+            .hero-stats      { gap: 26px; }
+            .steps           { grid-template-columns: 1fr; }
+            .fg-row          { grid-template-columns: 1fr; }
+            .spec-grid       { grid-template-columns: repeat(2,1fr); }
+            .form-box        { padding: 24px; }
+            .tool-fields-row { grid-template-columns: 1fr; }
+            .contact-grid    { gap: 36px; }
+        }
+
+        @media (max-width: 480px) {
+            section          { padding: 56px 16px; }
+            .hero-jana-img   { max-width: 200px; }
+            .spec-grid       { grid-template-columns: 1fr; }
+            .hero-stats      { gap: 16px; }
+            .stat-num        { font-size: 1.7rem; }
+            .svc-grid        { grid-template-columns: 1fr; }
+            .footer-grid     { gap: 20px; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Janaina Villarroel",
+          "jobTitle": "Nutricionista Clínica e Esportiva",
+          "description": "Nutricionista com 8 anos de experiência, especializada em emagrecimento saudável, nutrição esportiva e saúde da mulher. Atendimento presencial em Atibaia-SP e online para todo o Brasil.",
+          "telephone": "+55-11-97222-8186",
+          "email": "nutrijanavillarroel@hotmail.com",
+          "image": "img/foto-jana.jpg.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Padre Ernesto da Cunha Veloso, 358",
+            "addressLocality": "Atibaia",
+            "addressRegion": "SP",
+            "postalCode": "12942-240",
+            "addressCountry": "BR"
+          },
+          "sameAs": ["https://www.instagram.com/nutrijanavillarroel"],
+          "knowsAbout": [
+            "Nutrição Clínica", "Nutrição Esportiva", "Saúde da Mulher",
+            "Emagrecimento Saudável", "Reeducação Alimentar",
+            "Suplementação Nutricional", "Nutrição na Gestação"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Janaina Villarroel — Nutricionista",
+          "description": "Consultório de nutrição clínica e esportiva em Atibaia-SP. Atendimento presencial e online para todo o Brasil.",
+          "telephone": "+55-11-97222-8186",
+          "email": "nutrijanavillarroel@hotmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Padre Ernesto da Cunha Veloso, 358",
+            "addressLocality": "Atibaia",
+            "addressRegion": "SP",
+            "postalCode": "12942-240",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -23.117,
+            "longitude": -46.556
+          },
+          "areaServed": [
+            {"@type": "City", "name": "Atibaia"},
+            {"@type": "Country", "name": "Brasil"}
+          ],
+          "priceRange": "$$"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<!-- ════════════ NAVBAR ════════════ -->
+<nav id="nav" aria-label="Navegação principal">
+    <div class="nav-inner">
+        <a href="#hero" aria-label="Janaina Villarroel Nutricionista — topo da página">
+            <img src="img/logositejana.png" alt="Janaina Villarroel Nutricionista" class="nav-logo-img">
+        </a>
+
+        <ul class="nav-links" id="navLinks" role="menubar">
+            <li role="none"><a href="#hero"        role="menuitem">Home</a></li>
+            <li role="none"><a href="#about"       role="menuitem">Sobre</a></li>
+            <li role="none"><a href="#specialties" role="menuitem">Especialidades</a></li>
+            <li role="none"><a href="#services"    role="menuitem">Serviços</a></li>
+            <li role="none"><a href="#process"     role="menuitem">Como Funciona</a></li>
+            <li role="none">
+                <a href="#contact" role="menuitem" class="nav-cta">Agendar Consulta</a>
+            </li>
+        </ul>
+
+        <button type="button" class="nav-burger" id="burger"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navLinks">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main id="conteudo-principal">
+
+<!-- ════════════ HERO ════════════ -->
+<section id="hero" aria-labelledby="hero-h">
+    <div class="hero-glow"         aria-hidden="true"></div>
+    <div class="hero-photo-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-left">
+
+            <h1 class="hero-title" id="hero-h">
+                Janaina Villarroel
+                <em>Nutricionista</em>
+            </h1>
+
+            <p class="hero-tagline">Atibaia-SP · Online para todo o Brasil</p>
+
+            <p class="hero-desc">
+                Transformo sua relação com a alimentação de forma descomplicada e consciente.
+                Plano alimentar personalizado para emagrecimento, nutrição esportiva e saúde da mulher.
+            </p>
+
+        </div>
+
+        <div class="hero-photo-wrap" aria-hidden="false">
+            <div class="hero-photo-ring" aria-hidden="true"></div>
+            <img src="img/foto-jana.jpg.png"
+                 alt="Janaina Villarroel — Nutricionista"
+                 class="hero-jana-img">
+        </div>
+
+        <div class="hero-stats" aria-label="Números">
+            <div>
+                <div class="stat-num" id="c1">8+</div>
+                <div class="stat-lbl">Anos de experiência</div>
+            </div>
+            <div>
+                <div class="stat-num" id="c2">500+</div>
+                <div class="stat-lbl">Pacientes atendidos</div>
+            </div>
+            <div>
+                <div class="stat-num">100%</div>
+                <div class="stat-lbl">Planos personalizados</div>
+            </div>
+            <div>
+                <div class="stat-num">Online</div>
+                <div class="stat-lbl">Para todo o Brasil</div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!-- ════════════ ABOUT ════════════ -->
+<section id="about" aria-labelledby="about-h">
+    <div class="container">
+        <div class="about-grid">
+
+            <div class="about-text">
+                <span class="tag anim">Sobre mim</span>
+                <h2 id="about-h" class="anim d1">
+                    Olá! Sou a Janaina,<br>sua nutricionista <em>de confiança</em>
+                </h2>
+                <p class="anim d2">
+                    Sou nutricionista com <strong>8 anos de experiência</strong> e tenho paixão por trabalhar
+                    com pessoas que desejam transformar suas vidas por meio da alimentação, recuperando
+                    a saúde e a autoestima.
+                </p>
+                <p class="anim d3">
+                    Meu objetivo é ensinar de forma <strong>descomplicada e consciente</strong> como alcançar
+                    metas, ter mais disposição e melhor qualidade de vida a longo prazo. Minha consulta,
+                    tanto presencial quanto online, é focada nas <em>suas</em> dificuldades.
+                </p>
+                <p class="anim d3">
+                    Juntos, podemos criar uma rotina alimentar saudável que se encaixe na sua vida real.
+                    O plano alimentar e a suplementação são feitos exclusivamente para você e seus objetivos.
+                </p>
+
+                <div class="check-cta-cols anim d4">
+                    <div class="check-col">
+                        <div class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Plano 100% personalizado</div>
+                        <div class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Acompanhamento contínuo</div>
+                        <div class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Foco em saúde da mulher</div>
+                        <div class="col-btn">
+                            <a href="https://wa.me/5511972228186?text=Olá%20Janaina%2C%20gostaria%20de%20saber%20mais!"
+                               class="btn btn-green"
+                               aria-label="Falar com Janaina pelo WhatsApp"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Falar com a Janaina
+                            </a>
+                        </div>
+                    </div>
+                    <div class="check-col">
+                        <div class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Sem dietas restritivas</div>
+                        <div class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Suplementação personalizada</div>
+                        <div class="check-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Nutrição esportiva</div>
+                        <div class="col-btn">
+                            <a href="#services" class="btn btn-ghost-g">Ver planos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════ SPECIALTIES ════════════ -->
+<section id="specialties" aria-labelledby="spec-h">
+    <div class="container">
+        <header class="center-head">
+            <span class="tag anim">Áreas de atuação</span>
+            <h2 id="spec-h" class="section-title anim d1">Minhas especialidades</h2>
+            <p class="section-sub anim d2">Atendo diferentes necessidades com protocolos especializados para cada fase da vida.</p>
+        </header>
+
+        <div class="spec-grid" role="list">
+            <article class="spec-card anim"    role="listitem">
+                <div class="spec-icon si-purple" aria-hidden="true"><i class="fas fa-scale-balanced"></i></div>
+                <h3>Emagrecimento</h3>
+            </article>
+            <article class="spec-card anim d1" role="listitem">
+                <div class="spec-icon si-gold" aria-hidden="true"><i class="fas fa-dumbbell"></i></div>
+                <h3>Nutrição Esportiva</h3>
+            </article>
+            <article class="spec-card anim d2" role="listitem">
+                <div class="spec-icon si-rose" aria-hidden="true"><i class="fas fa-heart-pulse"></i></div>
+                <h3>Saúde da Mulher</h3>
+            </article>
+            <article class="spec-card anim d3" role="listitem">
+                <div class="spec-icon si-teal" aria-hidden="true"><i class="fas fa-baby"></i></div>
+                <h3>Gestação</h3>
+            </article>
+            <article class="spec-card anim"    role="listitem">
+                <div class="spec-icon si-green" aria-hidden="true"><i class="fas fa-pills"></i></div>
+                <h3>Suplementação</h3>
+            </article>
+            <article class="spec-card anim d1" role="listitem">
+                <div class="spec-icon si-gold" aria-hidden="true"><i class="fas fa-apple-whole"></i></div>
+                <h3>Reeducação Alimentar</h3>
+            </article>
+            <article class="spec-card anim d2" role="listitem">
+                <div class="spec-icon si-teal" aria-hidden="true"><i class="fas fa-spa"></i></div>
+                <h3>Bem-estar e Equilíbrio</h3>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════ SERVICES ════════════ -->
+<section id="services" aria-labelledby="svc-h">
+    <div class="container">
+        <header class="services-head">
+            <span class="tag anim">Planos e serviços</span>
+            <h2 id="svc-h" class="section-title anim d1">Escolha o plano ideal para você</h2>
+            <p class="section-sub anim d2">
+                Presencial em Atibaia-SP ou online de qualquer lugar do Brasil —
+                tenho o plano certo para a sua jornada.
+            </p>
+        </header>
+
+        <div class="svc-grid">
+            <!-- Presencial -->
+            <article class="svc-card anim">
+                <div class="svc-icon" aria-hidden="true"><i class="fas fa-location-dot"></i></div>
+                <h3>Plano Presencial</h3>
+                <p>Consulta personalizada na clínica em Atibaia-SP com avaliação completa e acompanhamento próximo.</p>
+                <ul class="svc-list" aria-label="O que inclui">
+                    <li>Avaliação antropométrica completa</li>
+                    <li>Anamnese alimentar detalhada</li>
+                    <li>Plano alimentar personalizado</li>
+                    <li>Orientação sobre suplementação</li>
+                    <li>Retorno em 30 dias</li>
+                </ul>
+                <a href="https://wa.me/5511972228186?text=Quero%20saber%20sobre%20o%20plano%20presencial!"
+                   class="svc-link"
+                   aria-label="Saber mais sobre Plano Presencial via WhatsApp"
+                   target="_blank" rel="noopener noreferrer">
+                    Quero saber mais <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <!-- Online (featured) -->
+            <article class="svc-card featured anim d2">
+                <div class="svc-icon" aria-hidden="true"><i class="fas fa-video"></i></div>
+                <h3>Plano Online</h3>
+                <p>Atendimento completo por videochamada para pacientes de qualquer cidade do Brasil, com a mesma qualidade do presencial.</p>
+                <ul class="svc-list" aria-label="O que inclui">
+                    <li>Consulta por videochamada</li>
+                    <li>Plano alimentar digital detalhado</li>
+                    <li>Suporte por WhatsApp</li>
+                    <li>Orientação de suplementação</li>
+                    <li>Acompanhamento mensal</li>
+                </ul>
+                <a href="https://wa.me/5511972228186?text=Quero%20saber%20sobre%20o%20plano%20online!"
+                   class="svc-link"
+                   aria-label="Saber mais sobre Plano Online via WhatsApp"
+                   target="_blank" rel="noopener noreferrer">
+                    Quero saber mais <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <!-- Info -->
+            <article class="svc-card anim d4">
+                <div class="svc-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></div>
+                <h3>Informações Adicionais</h3>
+                <p>Dúvidas sobre valores, formas de pagamento, localização ou primeiro atendimento? Fale comigo!</p>
+                <ul class="svc-list" aria-label="Saiba mais sobre">
+                    <li>Formas de pagamento</li>
+                    <li>Duração das consultas</li>
+                    <li>Documentos necessários</li>
+                    <li>Como acessar o consultório</li>
+                    <li>Reagendamento e cancelamento</li>
+                </ul>
+                <a href="https://wa.me/5511972228186?text=Gostaria%20de%20mais%20informações!"
+                   class="svc-link"
+                   aria-label="Tirar dúvidas pelo WhatsApp"
+                   target="_blank" rel="noopener noreferrer">
+                    Tirar dúvidas <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════ PROCESS ════════════ -->
+<section id="process" aria-labelledby="proc-h">
+    <div class="container">
+        <header class="center-head">
+            <span class="tag anim">Simples assim</span>
+            <h2 id="proc-h" class="section-title anim d1">Como funciona o atendimento</h2>
+            <p class="section-sub anim d2">Do primeiro contato ao seu plano personalizado em 4 passos.</p>
+        </header>
+
+        <div class="steps" role="list">
+            <div class="step anim"    role="listitem"><div class="step-num" aria-hidden="true">1</div><h3>Entre em contato</h3><p>Manda uma mensagem pelo WhatsApp e tiramos suas dúvidas antes de marcar.</p></div>
+            <div class="step anim d2" role="listitem"><div class="step-num" aria-hidden="true">2</div><h3>Agende sua consulta</h3><p>Escolhemos a melhor data, horário e formato: presencial ou online.</p></div>
+            <div class="step anim d3" role="listitem"><div class="step-num" aria-hidden="true">3</div><h3>Avaliação completa</h3><p>Faço uma avaliação detalhada do seu histórico, rotina e objetivos.</p></div>
+            <div class="step anim d4" role="listitem"><div class="step-num" aria-hidden="true">4</div><h3>Plano personalizado</h3><p>Recebe seu plano alimentar feito sob medida para a sua vida real.</p></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════ SCROLLING GALLERY ════════════ -->
+<section id="gallery" aria-label="Galeria de alimentos saudáveis">
+    <div class="track" aria-hidden="true">
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"  alt="Salada colorida"></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Prato nutritivo"></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Frutas e vegetais"></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&q=80" alt="Alimentos nutritivos"></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=400&q=80" alt="Bowl saudável"></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt="Grãos e legumes"></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80" alt="Smoothie verde"></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80" alt="Frutas e vitaminas"></div>
+        <!-- duplicate for seamless loop -->
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"  alt=""></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt=""></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt=""></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&q=80" alt=""></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=400&q=80" alt=""></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt=""></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80" alt=""></div>
+        <div class="gal-item"><img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80" alt=""></div>
+    </div>
+</section>
+
+
+<!-- ════════════ REVIEWS ════════════ -->
+<section id="reviews" aria-labelledby="rv-h">
+    <div class="container">
+        <header class="reviews-head">
+            <span class="tag anim">Depoimentos</span>
+            <h2 id="rv-h" class="section-title anim d1">O que os pacientes dizem</h2>
+            <div class="g-stars anim d2" aria-label="5 estrelas no Google">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="reviews-meta anim d3">Avaliações Google Meu Negócio</p>
+        </header>
+
+        <div class="rv-track-wrap">
+            <div class="rv-track" aria-label="Depoimentos de pacientes">
+
+                <!-- ── set 1 ── -->
+                <article class="rv-card">
+                    <div class="rv-head">
+                        <div class="rv-avatar" aria-hidden="true">M</div>
+                        <div class="rv-meta"><strong>Maria S.</strong><span>há 2 meses</span></div>
+                    </div>
+                    <div class="rv-stars" aria-label="5 estrelas">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <blockquote class="rv-text">
+                        "A Janaina é incrível! Comecei o acompanhamento há 3 meses e já perdi 8kg sem passar fome.
+                        O plano é prático e se encaixa na minha rotina corrida. Super indico!"
+                    </blockquote>
+                    <div class="rv-badge" aria-label="Avaliação do Google">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        Avaliação Google
+                    </div>
+                </article>
+
+                <article class="rv-card">
+                    <div class="rv-head">
+                        <div class="rv-avatar rv-avatar-green" aria-hidden="true">A</div>
+                        <div class="rv-meta"><strong>Ana Paula R.</strong><span>há 1 mês</span></div>
+                    </div>
+                    <div class="rv-stars" aria-label="5 estrelas">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <blockquote class="rv-text">
+                        "Fiz o acompanhamento online e foi uma experiência excelente! A Janaina é muito atenciosa,
+                        explica tudo direitinho e o plano alimentar é delicioso. Indiquei pra toda minha família!"
+                    </blockquote>
+                    <div class="rv-badge" aria-label="Avaliação do Google">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        Avaliação Google
+                    </div>
+                </article>
+
+                <article class="rv-card">
+                    <div class="rv-head">
+                        <div class="rv-avatar rv-avatar-yellow" aria-hidden="true">C</div>
+                        <div class="rv-meta"><strong>Camila F.</strong><span>há 3 semanas</span></div>
+                    </div>
+                    <div class="rv-stars" aria-label="5 estrelas">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <blockquote class="rv-text">
+                        "Melhor decisão que tomei! Tinha problemas de saúde ligados à alimentação e a Janaina me
+                        ajudou a entender meu corpo. Hoje me sinto muito mais disposta e feliz!"
+                    </blockquote>
+                    <div class="rv-badge" aria-label="Avaliação do Google">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        Avaliação Google
+                    </div>
+                </article>
+
+                <!-- ── set 2 (duplicado para loop contínuo) ── -->
+                <article class="rv-card" aria-hidden="true">
+                    <div class="rv-head">
+                        <div class="rv-avatar">M</div>
+                        <div class="rv-meta"><strong>Maria S.</strong><span>há 2 meses</span></div>
+                    </div>
+                    <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <blockquote class="rv-text">"A Janaina é incrível! Comecei o acompanhamento há 3 meses e já perdi 8kg sem passar fome. O plano é prático e se encaixa na minha rotina corrida. Super indico!"</blockquote>
+                    <div class="rv-badge"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Avaliação Google</div>
+                </article>
+
+                <article class="rv-card" aria-hidden="true">
+                    <div class="rv-head">
+                        <div class="rv-avatar rv-avatar-green">A</div>
+                        <div class="rv-meta"><strong>Ana Paula R.</strong><span>há 1 mês</span></div>
+                    </div>
+                    <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <blockquote class="rv-text">"Fiz o acompanhamento online e foi uma experiência excelente! A Janaina é muito atenciosa, explica tudo direitinho e o plano alimentar é delicioso. Indiquei pra toda minha família!"</blockquote>
+                    <div class="rv-badge"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Avaliação Google</div>
+                </article>
+
+                <article class="rv-card" aria-hidden="true">
+                    <div class="rv-head">
+                        <div class="rv-avatar rv-avatar-yellow">C</div>
+                        <div class="rv-meta"><strong>Camila F.</strong><span>há 3 semanas</span></div>
+                    </div>
+                    <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <blockquote class="rv-text">"Melhor decisão que tomei! Tinha problemas de saúde ligados à alimentação e a Janaina me ajudou a entender meu corpo. Hoje me sinto muito mais disposta e feliz!"</blockquote>
+                    <div class="rv-badge"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Avaliação Google</div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ════════════ TOOLS ════════════ -->
+<section id="tools" aria-labelledby="tools-h">
+    <div class="container">
+
+        <div class="tools-header">
+            <span class="tag">Ferramentas gratuitas</span>
+            <h2 id="tools-h" class="section-title">Dê o primeiro passo</h2>
+            <p class="section-sub">Descubra seu IMC e encontre o plano ideal para você.</p>
+        </div>
+
+        <div class="tools-grid">
+
+            <!-- ── IMC CALCULATOR ── -->
+            <article class="tool-card" id="imc-card">
+                <div class="tool-card-head">
+                    <i class="fas fa-weight" aria-hidden="true"></i>
+                    <h3>Calculadora de IMC</h3>
+                    <p>Uma referência inicial e rápida — o acompanhamento nutricional vai muito além de um número.</p>
+                </div>
+
+                <form id="imcForm" onsubmit="calcIMC(event)" novalidate>
+                    <div class="tool-fields-row">
+                        <div class="tool-field">
+                            <label for="imcPeso">Peso (kg)</label>
+                            <input type="number" id="imcPeso" placeholder="Ex: 70" min="30" max="250" required>
+                        </div>
+                        <div class="tool-field">
+                            <label for="imcAltura">Altura (cm)</label>
+                            <input type="number" id="imcAltura" placeholder="Ex: 170" min="100" max="250" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="tool-btn">
+                        <i class="fas fa-calculator" aria-hidden="true"></i> Calcular IMC
+                    </button>
+                </form>
+
+                <div id="imcResult" class="imc-result" aria-live="polite" hidden>
+                    <div class="imc-bar-wrap">
+                        <div class="imc-bar">
+                            <div class="imc-bar-zones">
+                                <span class="imc-zone imc-z-low"    title="Abaixo do peso"></span>
+                                <span class="imc-zone imc-z-normal" title="Normal"></span>
+                                <span class="imc-zone imc-z-over"   title="Sobrepeso"></span>
+                                <span class="imc-zone imc-z-ob1"    title="Obesidade I"></span>
+                                <span class="imc-zone imc-z-ob2"    title="Obesidade II/III"></span>
+                            </div>
+                            <div class="imc-marker" id="imcMarker"></div>
+                        </div>
+                        <div class="imc-bar-labels">
+                            <span>18.5</span><span>25</span><span>30</span><span>35</span>
+                        </div>
+                    </div>
+                    <div class="imc-value-row">
+                        <div class="imc-num" id="imcNum"></div>
+                        <div>
+                            <div class="imc-cat" id="imcCat"></div>
+                            <div class="imc-msg" id="imcMsg"></div>
+                        </div>
+                    </div>
+                    <a id="imcWA" href="#" target="_blank" rel="noopener noreferrer" class="tool-btn tool-btn-wa">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Falar com a Janaina sobre meu IMC
+                    </a>
+                </div>
+            </article>
+
+            <!-- ── QUIZ ── -->
+            <article class="tool-card" id="quiz-card">
+                <div class="tool-card-head">
+                    <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                    <h3>Quiz Nutricional</h3>
+                    <p>Responda 4 perguntas rápidas e descubra por onde começar.</p>
+                </div>
+
+                <div id="quizBody">
+                    <div class="quiz-progress">
+                        <div class="quiz-bar"><div class="quiz-fill" id="quizFill"></div></div>
+                        <span class="quiz-step-label" id="quizStep">Pergunta 1 de 4</span>
+                    </div>
+                    <p class="quiz-q" id="quizQ"></p>
+                    <div class="quiz-opts" id="quizOpts" role="radiogroup"></div>
+                </div>
+
+                <div id="quizResult" class="quiz-result" hidden>
+                    <div class="quiz-result-icon" id="qrIcon"></div>
+                    <h4 id="qrTitle"></h4>
+                    <p id="qrMsg"></p>
+                    <a id="qrWA" href="#" target="_blank" rel="noopener noreferrer" class="tool-btn tool-btn-wa">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Quero meu plano personalizado
+                    </a>
+                    <button type="button" onclick="resetQuiz()" class="quiz-reset">Refazer o quiz</button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════ CONTACT ════════════ -->
+<section id="contact" aria-labelledby="ct-h">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-left">
+                <span class="tag anim">Fale comigo</span>
+                <h2 id="ct-h" class="anim d1">Pronta para começar<br>sua transformação?</h2>
+                <p class="anim d2">Entre em contato pelo canal que preferir. Respondo com carinho e sem enrolação!</p>
+
+                <address class="cinfo">
+                    <div class="citem anim d2">
+                        <div class="citem-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></div>
+                        <div class="citem-text">
+                            <strong>WhatsApp</strong>
+                            <a href="https://wa.me/5511972228186" aria-label="Enviar WhatsApp" target="_blank" rel="noopener noreferrer">(11) 97222-8186</a>
+                        </div>
+                    </div>
+                    <div class="citem anim d3">
+                        <div class="citem-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+                        <div class="citem-text">
+                            <strong>E-mail</strong>
+                            <a href="mailto:nutrijanavillarroel@hotmail.com">nutrijanavillarroel@hotmail.com</a>
+                        </div>
+                    </div>
+                    <div class="citem anim d4">
+                        <div class="citem-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="citem-text">
+                            <strong>Endereço</strong>
+                            <p>R. Padre Ernesto da Cunha Veloso, 358<br>Atibaia Jardim, Atibaia – SP<br>CEP 12942-240</p>
+                        </div>
+                    </div>
+                </address>
+
+                <div class="csocial anim d5">
+                    <a href="https://wa.me/5511972228186"
+                       class="csocia-btn wa"
+                       aria-label="WhatsApp"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nutrijanavillarroel"
+                       class="csocia-btn ig"
+                       aria-label="Instagram"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="form-box anim d2">
+                <h3>Envie uma mensagem</h3>
+                <form id="cform" novalidate aria-label="Formulário de contato">
+                    <div class="fg-row">
+                        <div class="fg">
+                            <label for="fname">Nome completo *</label>
+                            <input type="text" id="fname" name="name" placeholder="Seu nome" required autocomplete="name">
+                        </div>
+                        <div class="fg">
+                            <label for="fphone">Telefone *</label>
+                            <input type="tel" id="fphone" name="phone" placeholder="(11) 99999-9999" required autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label for="femail">E-mail *</label>
+                        <input type="email" id="femail" name="email" placeholder="seu@email.com" required autocomplete="email">
+                    </div>
+                    <div class="fg">
+                        <label for="fservice">Tipo de atendimento</label>
+                        <select id="fservice" name="service">
+                            <option value="">Selecione...</option>
+                            <option value="Consulta Presencial – Atibaia/SP">Consulta Presencial – Atibaia/SP</option>
+                            <option value="Consulta Online">Consulta Online</option>
+                            <option value="Tenho apenas uma dúvida">Só tenho uma dúvida</option>
+                        </select>
+                    </div>
+                    <div class="fg">
+                        <label for="fmsg">Mensagem</label>
+                        <textarea id="fmsg" name="message" placeholder="Conte um pouco sobre seus objetivos ou dúvidas..."></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        Enviar mensagem
+                    </button>
+                    <div class="form-ok" id="formOk" role="alert">
+                        ✅ Mensagem enviada! A Janaina vai te responder em breve.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer>
+    <div class="footer-grid">
+        <div class="ft-brand">
+            <a href="#hero" aria-label="Janaina Villarroel Nutricionista — topo da página">
+                <img src="img/logositejana.png" alt="Janaina Villarroel Nutricionista" class="ft-logo">
+            </a>
+            <p>Transformando vidas por meio da alimentação consciente. Presencial em Atibaia-SP e online para todo o Brasil.</p>
+        </div>
+
+        <nav aria-label="Links do site">
+            <div class="ft-col">
+                <h4>Navegação</h4>
+                <ul class="ft-links">
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#specialties">Especialidades</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#process">Como funciona</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="ft-col">
+            <h4>Contato</h4>
+            <ul class="ft-links">
+                <li><a href="https://wa.me/5511972228186" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> (11) 97222-8186</a></li>
+                <li><a href="mailto:nutrijanavillarroel@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> nutrijanavillarroel@hotmail.com</a></li>
+                <li><a href="https://www.instagram.com/nutrijanavillarroel" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i> @nutrijanavillarroel</a></li>
+                <li class="footer-address"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Atibaia Jardim, Atibaia – SP</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Janaina Villarroel · Nutricionista. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+<!-- ════════════ WHATSAPP FLOAT ════════════ -->
+<div class="wa-float" role="complementary" aria-label="Acesso rápido ao WhatsApp">
+    <a href="https://wa.me/5511972228186?text=Olá%20Janaina%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações!"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Falar com Janaina pelo WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+<!-- ════════════ JAVASCRIPT ════════════ -->
+<script>
+    /* ----- navbar scroll ----- */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    /* ----- mobile burger ----- */
+    const burger   = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    burger.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open);
+        burger.innerHTML = open
+            ? '<span style="transform:rotate(45deg) translate(5px,5px)"></span><span style="opacity:0;width:0"></span><span style="transform:rotate(-45deg) translate(5px,-5px)"></span>'
+            : '<span></span><span></span><span></span>';
+    });
+
+    navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            burger.setAttribute('aria-expanded', 'false');
+            burger.innerHTML = '<span></span><span></span><span></span>';
+        });
+    });
+
+    /* ----- scroll animations ----- */
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.anim').forEach(el => io.observe(el));
+
+    /* ----- phone mask ----- */
+    const phone = document.getElementById('fphone');
+    if (phone) {
+        phone.addEventListener('input', e => {
+            let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+            if (v.length > 2)  v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+            if (v.length > 10) v = `${v.slice(0,10)}-${v.slice(10)}`;
+            e.target.value = v;
+        });
+    }
+
+    /* ----- contact form → WhatsApp ----- */
+    document.getElementById('cform').addEventListener('submit', e => {
+        e.preventDefault();
+
+        const name    = document.getElementById('fname').value.trim();
+        const tel     = document.getElementById('fphone').value.trim();
+        const email   = document.getElementById('femail').value.trim();
+        const service = document.getElementById('fservice').value;
+        const msg     = document.getElementById('fmsg').value.trim();
+
+        if (!name || !tel || !email) {
+            alert('Por favor, preencha nome, telefone e e-mail.');
+            return;
+        }
+
+        const text = encodeURIComponent(
+            `Olá Janaina! Vim pelo site 👋\n\n` +
+            `*Nome:* ${name}\n` +
+            `*Telefone:* ${tel}\n` +
+            `*E-mail:* ${email}\n` +
+            (service ? `*Interesse:* ${service}\n` : '') +
+            (msg     ? `*Mensagem:* ${msg}` : '')
+        );
+
+        window.open(`https://wa.me/5511972228186?text=${text}`, '_blank');
+
+        const form = document.getElementById('cform');
+        const ok   = document.getElementById('formOk');
+        form.style.display = 'none';
+        ok.style.display   = 'block';
+
+        setTimeout(() => {
+            form.reset();
+            form.style.display = 'block';
+            ok.style.display   = 'none';
+        }, 5000);
+    });
+
+    /* ----- smooth scroll fallback ----- */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+        });
+    });
+
+    /* ─── IMC CALCULATOR ─── */
+    function calcIMC(e) {
+        e.preventDefault();
+        const peso   = parseFloat(document.getElementById('imcPeso').value);
+        const altura = parseFloat(document.getElementById('imcAltura').value) / 100;
+        if (!peso || !altura || peso < 30 || altura < 1) return;
+
+        const imc = peso / (altura * altura);
+        const val = imc.toFixed(1);
+
+        const data = imc < 18.5
+            ? { cat: 'Abaixo do peso',   msg: 'Seu peso está abaixo do ideal. A Janaina pode montar um plano para você ganhar massa de forma saudável.',          color: '#64B5F6', pct: imc / 40 }
+            : imc < 25
+            ? { cat: 'Peso normal ✓',    msg: 'Parabéns! Seu IMC está na faixa saudável. Um acompanhamento nutricional ajuda a manter e otimizar ainda mais.', color: '#66BB6A', pct: (imc - 18.5) / 21.5 * 0.325 + 0.0925 }
+            : imc < 30
+            ? { cat: 'Sobrepeso',        msg: 'Com orientação nutricional personalizada é possível atingir o peso ideal de forma saudável e sem restrições.', color: '#FFA726', pct: (imc - 25) / 5 * 0.125 + 0.415 }
+            : imc < 35
+            ? { cat: 'Obesidade Grau I', msg: 'A nutrição é o passo mais importante. A Janaina vai criar um plano estratégico e sustentável para você.',         color: '#FF7043', pct: (imc - 30) / 5 * 0.125 + 0.54 }
+            : { cat: 'Obesidade Grau II/III', msg: 'O acompanhamento nutricional especializado faz toda a diferença. Marque sua consulta e comece hoje.',       color: '#EF5350', pct: Math.min((imc - 35) / 10 * 0.25 + 0.665, 0.97) };
+
+        document.getElementById('imcNum').textContent = val;
+        document.getElementById('imcCat').textContent = data.cat;
+        document.getElementById('imcCat').style.color = data.color;
+        document.getElementById('imcMsg').textContent = data.msg;
+        document.getElementById('imcMarker').style.left = (data.pct * 100).toFixed(1) + '%';
+
+        const msg = encodeURIComponent(`Olá Janaina! Calculei meu IMC no site e obtive ${val} (${data.cat}). Gostaria de saber mais sobre o acompanhamento nutricional!`);
+        document.getElementById('imcWA').href = `https://wa.me/5511972228186?text=${msg}`;
+
+        const el = document.getElementById('imcResult');
+        el.hidden = false;
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    /* ─── QUIZ NUTRICIONAL ─── */
+    const QUIZ = [
+        {
+            q: 'Qual é o seu principal objetivo?',
+            opts: ['Perder peso', 'Ganhar massa muscular', 'Melhorar a saúde', 'Ter mais energia']
+        },
+        {
+            q: 'Como está sua alimentação hoje?',
+            opts: ['Muito irregular, como qualquer coisa', 'Tento comer bem, mas tenho dificuldades', 'Sigo uma alimentação razoável', 'Já me alimento de forma equilibrada']
+        },
+        {
+            q: 'Você pratica alguma atividade física?',
+            opts: ['Não pratico nenhuma', 'Caminhada ou atividade leve', 'Exercício moderado 2–3×/semana', 'Treino intenso regularmente']
+        },
+        {
+            q: 'O que mais te impede de alcançar seus objetivos?',
+            opts: ['Falta de tempo', 'Não sei por onde começar', 'Falta de motivação', 'Já tentei mas não funcionou']
+        }
+    ];
+
+    const RESULTS = {
+        'Perder peso': {
+            icon: '🥗',
+            title: 'Emagrecimento Inteligente',
+            msg: 'Seu perfil pede um plano focado em emagrecimento saudável e sustentável — sem dietas restritivas que te deixam com fome. A Janaina vai criar uma estratégia que respeita sua rotina e seus gostos, garantindo resultados reais a longo prazo.',
+            wa: 'Olá Janaina! Fiz o quiz do site e meu objetivo é emagrecer. Gostaria de saber mais sobre o acompanhamento!'
+        },
+        'Ganhar massa muscular': {
+            icon: '💪',
+            title: 'Nutrição para Performance',
+            msg: 'Para ganhar massa muscular, a nutrição é tão importante quanto o treino. Com a quantidade certa de proteínas, carboidratos e calorias — num plano feito sob medida — você vai acelerar seus ganhos de forma segura e eficiente.',
+            wa: 'Olá Janaina! Fiz o quiz do site e meu objetivo é ganhar massa muscular. Gostaria de saber mais!'
+        },
+        'Melhorar a saúde': {
+            icon: '❤️',
+            title: 'Saúde de Dentro para Fora',
+            msg: 'Sua alimentação pode ser sua melhor medicina. A Janaina vai criar um plano que melhora seus indicadores de saúde de forma natural, equilibrada e deliciosa — sem sofrimento, com prazer real no prato.',
+            wa: 'Olá Janaina! Fiz o quiz do site e quero melhorar minha saúde com alimentação. Gostaria de agendar uma consulta!'
+        },
+        'Ter mais energia': {
+            icon: '⚡',
+            title: 'Energia e Disposição',
+            msg: 'A falta de energia quase sempre está ligada à alimentação inadequada. Com o plano certo — horários, combinações e nutrientes que seu corpo pede — você vai se sentir com muito mais disposição já nas primeiras semanas.',
+            wa: 'Olá Janaina! Fiz o quiz do site e quero ter mais energia no dia a dia. Gostaria de saber mais!'
+        }
+    };
+
+    let quizStep = 0;
+    let quizAnswers = [];
+
+    function renderQuiz() {
+        const q = QUIZ[quizStep];
+        document.getElementById('quizQ').textContent = q.q;
+        document.getElementById('quizStep').textContent = `Pergunta ${quizStep + 1} de ${QUIZ.length}`;
+        document.getElementById('quizFill').style.width = ((quizStep + 1) / QUIZ.length * 100) + '%';
+
+        const container = document.getElementById('quizOpts');
+        container.innerHTML = '';
+        q.opts.forEach((opt, i) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'quiz-opt';
+            btn.innerHTML = `<span class="opt-icon" aria-hidden="true"></span>${opt}`;
+            btn.setAttribute('aria-label', opt);
+            btn.addEventListener('click', () => selectOpt(opt));
+            container.appendChild(btn);
+        });
+    }
+
+    function selectOpt(answer) {
+        quizAnswers.push(answer);
+        quizStep++;
+        if (quizStep < QUIZ.length) {
+            renderQuiz();
+        } else {
+            showQuizResult();
+        }
+    }
+
+    function showQuizResult() {
+        document.getElementById('quizBody').hidden = true;
+        const result = document.getElementById('quizResult');
+        result.hidden = false;
+
+        const goal   = quizAnswers[0];
+        const data   = RESULTS[goal] || RESULTS['Melhorar a saúde'];
+
+        document.getElementById('qrIcon').textContent  = data.icon;
+        document.getElementById('qrTitle').textContent = data.title;
+        document.getElementById('qrMsg').textContent   = data.msg;
+        document.getElementById('qrWA').href = `https://wa.me/5511972228186?text=${encodeURIComponent(data.wa)}`;
+    }
+
+    function resetQuiz() {
+        quizStep = 0;
+        quizAnswers = [];
+        document.getElementById('quizBody').hidden = false;
+        document.getElementById('quizResult').hidden = true;
+        renderQuiz();
+    }
+
+    renderQuiz();
+</script>
+</body>
+</html>
