@@ -610,37 +610,6 @@
         .step p  { font-size:.85rem; color:var(--t-light); line-height:1.65; }
 
         /* ╔══════════════════════════════╗
-           ║      SCROLLING GALLERY      ║
-           ╚══════════════════════════════╝ */
-        #gallery { padding: 56px 0; overflow: hidden; background: transparent; }
-
-        .track {
-            display: flex;
-            gap: 18px;
-            animation: slide 60s linear infinite;
-            width: max-content;
-        }
-
-        .track:hover { animation-play-state: paused; }
-
-        @keyframes slide { from { transform:translateX(0); } to { transform:translateX(-50%); } }
-
-        .gal-item {
-            width: 215px; height: 175px;
-            border-radius: var(--r);
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .gal-item img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            transition: transform .5s var(--ease);
-        }
-
-        .gal-item:hover img { transform: scale(1.1); }
-
-        /* ╔══════════════════════════════╗
            ║          REVIEWS            ║
            ╚══════════════════════════════╝ */
         #reviews { background: transparent; }
@@ -1371,24 +1340,6 @@
                  class="hero-jana-img">
         </div>
 
-        <div class="hero-stats" aria-label="Números">
-            <div>
-                <div class="stat-num" id="c1">8+</div>
-                <div class="stat-lbl">Anos de experiência</div>
-            </div>
-            <div>
-                <div class="stat-num" id="c2">500+</div>
-                <div class="stat-lbl">Pacientes atendidos</div>
-            </div>
-            <div>
-                <div class="stat-num">100%</div>
-                <div class="stat-lbl">Planos personalizados</div>
-            </div>
-            <div>
-                <div class="stat-num">Online</div>
-                <div class="stat-lbl">Para todo o Brasil</div>
-            </div>
-        </div>
     </div>
 
 
@@ -1472,10 +1423,6 @@
                 <div class="spec-icon si-rose" aria-hidden="true"><i class="fas fa-heart-pulse"></i></div>
                 <h3>Saúde da Mulher</h3>
             </article>
-            <article class="spec-card anim d3" role="listitem">
-                <div class="spec-icon si-teal" aria-hidden="true"><i class="fas fa-baby"></i></div>
-                <h3>Gestação</h3>
-            </article>
             <article class="spec-card anim"    role="listitem">
                 <div class="spec-icon si-green" aria-hidden="true"><i class="fas fa-pills"></i></div>
                 <h3>Suplementação</h3>
@@ -1483,10 +1430,6 @@
             <article class="spec-card anim d1" role="listitem">
                 <div class="spec-icon si-gold" aria-hidden="true"><i class="fas fa-apple-whole"></i></div>
                 <h3>Reeducação Alimentar</h3>
-            </article>
-            <article class="spec-card anim d2" role="listitem">
-                <div class="spec-icon si-teal" aria-hidden="true"><i class="fas fa-spa"></i></div>
-                <h3>Bem-estar e Equilíbrio</h3>
             </article>
         </div>
     </div>
@@ -1585,30 +1528,6 @@
             <div class="step anim d3" role="listitem"><div class="step-num" aria-hidden="true">3</div><h3>Avaliação completa</h3><p>Faço uma avaliação detalhada do seu histórico, rotina e objetivos.</p></div>
             <div class="step anim d4" role="listitem"><div class="step-num" aria-hidden="true">4</div><h3>Plano personalizado</h3><p>Recebe seu plano alimentar feito sob medida para a sua vida real.</p></div>
         </div>
-    </div>
-</section>
-
-
-<!-- ════════════ SCROLLING GALLERY ════════════ -->
-<section id="gallery" aria-label="Galeria de alimentos saudáveis">
-    <div class="track" aria-hidden="true">
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"  alt="Salada colorida"></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Prato nutritivo"></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Frutas e vegetais"></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&q=80" alt="Alimentos nutritivos"></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=400&q=80" alt="Bowl saudável"></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt="Grãos e legumes"></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80" alt="Smoothie verde"></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80" alt="Frutas e vitaminas"></div>
-        <!-- duplicate for seamless loop -->
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"  alt=""></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt=""></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt=""></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&q=80" alt=""></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=400&q=80" alt=""></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt=""></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80" alt=""></div>
-        <div class="gal-item"><img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80" alt=""></div>
     </div>
 </section>
 
