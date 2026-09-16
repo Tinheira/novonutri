@@ -947,16 +947,19 @@
 
         .rec-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-h); }
 
-        .rec-icon {
-            width: 48px; height: 48px;
-            border-radius: 50%;
-            background: var(--g-pale);
-            color: var(--g-main);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            margin-bottom: 16px;
+        .rec-photo {
+            width: 100%;
+            height: 150px;
+            border-radius: var(--r-sm);
+            overflow: hidden;
+            margin-bottom: 18px;
+        }
+
+        .rec-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .rec-card h3 { font-family:'Poppins',sans-serif; font-size: 1.05rem; color: var(--g-dark); margin-bottom: 8px; }
@@ -2003,7 +2006,7 @@
 
         <div class="rec-grid">
             <article class="rec-card anim">
-                <div class="rec-icon" aria-hidden="true"><i class="fas fa-tag"></i></div>
+                <div class="rec-photo"><img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?w=400&q=75" alt="" loading="lazy"></div>
                 <h3>Nome da marca ou produto</h3>
                 <p>Breve descrição do produto e o motivo da indicação da Jana.</p>
                 <div class="rec-coupon">
@@ -2016,7 +2019,7 @@
             </article>
 
             <article class="rec-card anim d1">
-                <div class="rec-icon" aria-hidden="true"><i class="fas fa-tag"></i></div>
+                <div class="rec-photo"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&q=75" alt="" loading="lazy"></div>
                 <h3>Nome da marca ou produto</h3>
                 <p>Breve descrição do produto e o motivo da indicação da Jana.</p>
                 <div class="rec-coupon">
@@ -2029,7 +2032,7 @@
             </article>
 
             <article class="rec-card anim d2">
-                <div class="rec-icon" aria-hidden="true"><i class="fas fa-tag"></i></div>
+                <div class="rec-photo"><img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&q=75" alt="" loading="lazy"></div>
                 <h3>Nome da marca ou produto</h3>
                 <p>Breve descrição do produto e o motivo da indicação da Jana.</p>
                 <div class="rec-coupon">
