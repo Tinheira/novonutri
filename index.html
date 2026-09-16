@@ -401,22 +401,26 @@
         }
 
         .spec-icon {
-            width: 76px;
-            height: 76px;
-            border-radius: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
             margin: 0 auto 18px;
-            font-size: 1.75rem;
-            color: white;
-            box-shadow: 0 8px 24px rgba(0,0,0,.18);
+            padding: 4px;
+            box-shadow: 0 8px 24px rgba(20,83,45,.14);
             transition: transform .35s var(--ease), box-shadow .35s var(--ease);
         }
 
+        .spec-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
         .spec-card:hover .spec-icon {
-            transform: scale(1.1) translateY(-4px);
-            box-shadow: 0 16px 36px rgba(0,0,0,.22);
+            transform: scale(1.08) translateY(-4px);
+            box-shadow: 0 16px 36px rgba(20,83,45,.2);
         }
 
         .si-purple { background: linear-gradient(135deg, #9C27B0, #4A148C); }
@@ -1376,23 +1380,23 @@
 
         <div class="spec-grid" role="list">
             <article class="spec-card anim"    role="listitem">
-                <div class="spec-icon si-purple" aria-hidden="true"><i class="fas fa-scale-balanced"></i></div>
+                <div class="spec-icon si-purple"><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=200&q=75" alt="" loading="lazy"></div>
                 <h3>Emagrecimento</h3>
             </article>
             <article class="spec-card anim d1" role="listitem">
-                <div class="spec-icon si-gold" aria-hidden="true"><i class="fas fa-dumbbell"></i></div>
+                <div class="spec-icon si-gold"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=200&q=75" alt="" loading="lazy"></div>
                 <h3>Nutrição Esportiva</h3>
             </article>
             <article class="spec-card anim d2" role="listitem">
-                <div class="spec-icon si-rose" aria-hidden="true"><i class="fas fa-heart-pulse"></i></div>
+                <div class="spec-icon si-rose"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=200&q=75" alt="" loading="lazy"></div>
                 <h3>Saúde da Mulher</h3>
             </article>
             <article class="spec-card anim"    role="listitem">
-                <div class="spec-icon si-green" aria-hidden="true"><i class="fas fa-pills"></i></div>
+                <div class="spec-icon si-green"><img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=200&q=75" alt="" loading="lazy"></div>
                 <h3>Suplementação</h3>
             </article>
             <article class="spec-card anim d1" role="listitem">
-                <div class="spec-icon si-gold" aria-hidden="true"><i class="fas fa-apple-whole"></i></div>
+                <div class="spec-icon si-teal"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=200&q=75" alt="" loading="lazy"></div>
                 <h3>Reeducação Alimentar</h3>
             </article>
         </div>
